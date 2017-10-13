@@ -30,7 +30,7 @@ public class Point {
     }
 
     public Point normalize() {
-       return new Point(x / calcLength(), y / calcLength());
+        return new Point(x / calcLength(), y / calcLength());
     }
 
     public Point minus(Point otherPoint) {
@@ -38,12 +38,10 @@ public class Point {
     }
 
     public Point multiply(double value) {
-        return new Point(x*value,y*value);
+        return new Point(x * value, y * value);
     }
-    public Point plus (Point otherPoint) {
+
+    public Point plus(Point otherPoint) {
         return new Point(x + otherPoint.x, y + otherPoint.y);
     }
-
-
-
 }
